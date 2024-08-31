@@ -46,6 +46,7 @@ bool EnergyManager::addModel(EnergyCalculator* model)
   }
 
   // If we got here then the model is unique enough to be added.
+  // (maybe not constantly, but well enough)
   size_t index = m_models.size();
   m_models.push_back(model);
   m_identifiers[model->identifier()] = index;
